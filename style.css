@@ -146,30 +146,57 @@ p, h3{
 }
 
 .form-container{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	background: #000;
-	justify-content: center;
-
+	height: 280px;
 
 }
 
 .form{
-	display: flex;
+	
 	flex-direction: column;
 	text-align: center;
-	width: 30%;
+	width: 60%;
 	margin-top: 40px;
 	border-style: solid;
 	border-color: green;
+
 }
 
-.input-form{
+input{
 	width: 90%;
+	background: green;
+	border-color: #fff;
+	border-bottom: solid;
+	border-top: none;
+	border-left: none;
 	
-	
+}
 
+.coment{
+	height: 455px;
 }
 
 .section-container__sns__{
+	display: flex;
+	padding-top: 40px;
+	background: #000;
+}
 
+.sns-p{
+	background: #000;
+}
+
+.perilla{
+	padding-top: 40px;
+	padding-right: 40px;
+	cursor: pointer;
+
+}
+
+.bombilla{
+	padding-top: 60px;
+	padding-right: 40px;
+	position: relative;
 }
