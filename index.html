@@ -28,11 +28,11 @@
 					</div>
 					<div class="nav-btn">
 						<i class="fa-solid fa-lightbulb"></i>	
-						<a href="">Servicios</a>
+						<a href="#serv">Servicios</a>
 					</div>
 					<div class="nav-btn">
 						<i class="fa-solid fa-user-tie"></i>	
-						<a href="">Sobre nosotros</a>
+						<a href="#snos">Sobre nosotros</a>
 					</div>
 					<div class="nav-btn">
 						<i class="fa-solid fa-address-card"></i>	
@@ -43,13 +43,19 @@
 		</div>
 		<div class="header-container__soc__">
 			<div class="social">
-				<i class="fa-brands fa-instagram soc"></i>
+				<a href="https://www.instagram.com/francoegrx21/" target="_blank">
+					<i class="fa-brands fa-instagram soc"></i>
+				</a>
 			</div>
 			<div class="social">
-				<i class="fa-brands fa-facebook-square soc"></i>
+				<a href="https://www.facebook.com/profile.php?id=100084128135855" target="_blank">	
+					<i class="fa-brands fa-facebook-square soc"></i>
+				</a>
 			</div>
 			<div class="social">
-				<i class="fa-brands fa-whatsapp soc"></i>
+				<a href="https://wa.me/+5492355644768" target="_blank">
+					<i class="fa-brands fa-whatsapp soc" ></i>
+				</a>	
 			</div>
 		</div>
 	</header>
@@ -91,7 +97,14 @@
 			</div>
 		</section>
 		<div class="form-container">
-			<form class="form">
+			<div>
+				<img class="perilla" src="off.jpg">
+				
+			</div>
+			<div id= "bombilla" >
+				<img src="bombilla.jpg" class= "bombilla" hidden= " ">
+			</div>
+			<form class="form" hidden=" ">
 				<h3><b>Ayudanos a mejorar!!</b></h3>
 				<p>Dejanos tu comentario</p>
 				<div class="input-form">
@@ -101,20 +114,22 @@
 					<input type="text" name="mail" placeholder="Email">
 				</div>	
 				<div class="input-form">	
-					<input type="text" name="cooment" placeholder="Comentario">
+					<input type="text" name="cooment" placeholder="Comentario" class="coment">
 				</div>
 				<div class="input-form">	
 					<input type="submit">
 				</div>
 			</form>
+			
+			<script src="jscode.js"></script>
 		</div>
-		<section id="snos" class="section-container__sns__">
+		<section  class="section-container__sns__">
 			<div class="section-container__sns__">
-				<div>
-					<img src="manoncode.jpg">
+				<div id="snos" class="sns-img">
+					<img src="el-fran.jpg" class="el-fran">
 				</div>
-				<div>
-					<p>Hola Soy Franco, vivo en Lincoln pcia de Bs As, tengo 35 años, me dedico a realizar paginas web dinamicas </p>
+				<div class="sns-p">
+					<p>Hola Soy Franco Gonzalez, vivo en Lincoln pcia de Bs As,<br> tengo 35 años, me dedico a realizar paginas web dinamicas. <br>Hace un tiempo me adentre en el mundo de la programacion,<br> me gustaria que pueda elegirme para sus proyectos, para poder <br>crear juntos las soluciones informaticas que le puedan facilitar<br> y automatizar la resolucion de problemas</p>
 				</div>
 			</div>
 		</section>
@@ -125,8 +140,8 @@
 		</section>
 	</div>
 	<footer>
-		<div>
-			
+		<div class="foot">
+			<a></a>			
 		</div>
 	</footer>
 </body>
