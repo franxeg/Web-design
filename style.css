@@ -184,7 +184,7 @@ det-log{
 
 
 .header-container__nav__{
-	min-width: 600px;
+	
 	display: flex;
 	background: green;
 	height: 35px;
@@ -287,19 +287,25 @@ p, h3{
 
 ::placeholder{
 	color: #fff;
-	font-family: 'Tangerine';
+	font-family: 'Cinzel';
+	font-size: small;
+	text-align: center;
 }
 
 input, textarea{
-	width: 90%;
-	background: green;
-	border-color: #fff;
-	border-bottom: solid;
-	border-top: none;
-	border-left: none;
+    width: 90%;
+    background: #05240563;
+    border-color: #000;
+    border-bottom: solid;
+    border-top: none;
+    color: #00ff14;
+    max-width: 90%;
+    max-height: 46px;
 }
 
-
+input[type="submit"]:hover{
+	cursor: pointer;
+}
 
 .section-container__sns__{
 	display: flex;
@@ -349,7 +355,7 @@ input, textarea{
 
 .el-fran{
 	width: 150px;
-	border-radius: 30px;
+	border-radius: 60px;
 	border-style: solid;
 	border-color: #fff;
 	height: 210px;
@@ -367,19 +373,18 @@ input, textarea{
 	
 }
 .foot__soc__{
-	width: 100%;
-	height: 35px;
-	
-	font-size: large;
-	font-family: 'Cinzel';
-	background: linear-gradient(45deg, green, black);
-	background-size: 200%;
-	margin: 0;
+    width: 78%;
+    height: 35px;
+    font-size: large;
+    font-family: 'Cinzel';
+    background: linear-gradient(45deg, green, black);
 }
 
+.responsive{
+	display: none;
+}
 
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
 	.header-container{
 		background-image: none;
 		background: #000;
@@ -392,7 +397,7 @@ input, textarea{
 		margin-top: 0;
 	}
 	.subt{
-		font-size: smaller;
+		font-size: small;
 		width: 70%;
 	}
 	.hidden{
@@ -401,5 +406,35 @@ input, textarea{
 	.sns-img{
 		display: block;
 	}
+	.header-container__nav__{
+		
+	}
+	.main{
+		height: auto;
+	}
+	.sns-p{
+		font-size: smaller;
+	}
+
 }
 
+@media screen and (max-width: 800px){
+	.nav-btn{
+		display: none;
+	}
+	.section-srv{
+		font-size: small;
+
+	}
+
+}
+
+@media screen and (max-width: 617px){
+	.header-container__tit__{
+		max-width: 500px;
+	}
+		.header-container__nav__{
+		max-width: 500px;
+	
+	}
+}
