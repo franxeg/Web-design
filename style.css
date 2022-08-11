@@ -36,6 +36,7 @@ i{
 	width: auto;
 	display: block;
 	background-color: green;
+	margin-top: 10px;
 }
 
 
@@ -43,7 +44,8 @@ i{
 .list-li:hover{
 	background: linear-gradient(45deg, green, black);
 	border-bottom: solid;
-	border-color: #000;
+	border-color: green;
+	
 }
 
 .soc-li{
@@ -58,6 +60,7 @@ i{
 	list-style: none;
 	text-align: left;
 	padding: 8px;
+	position: relative;
 }
 
 .list-li{
@@ -373,7 +376,7 @@ input[type="submit"]:hover{
 	
 }
 .foot__soc__{
-    width: 78%;
+    width: auto;
     height: 35px;
     font-size: large;
     font-family: 'Cinzel';
@@ -417,6 +420,26 @@ input[type="submit"]:hover{
 	}
 
 }
+
+.form__mail__{
+
+	flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    border-style: solid;
+    border-color: green;
+    background: black;
+    padding: 64px;
+}
+
+.sobre{
+	max-width: 263px;
+}
+
+.input-form__mail__{
+	height: 90px;
+}
+
 
 @media screen and (max-width: 800px){
 	.nav-btn{
