@@ -214,8 +214,23 @@ det-log{
 	width: 100%;
 	margin-top: 10px;
 	grid-template-columns: repeat(3, 1fr);
-
+	
 }
+/*.section-container__srv___:hover {
+	animation: man 5s infinite;
+}
+
+@keyframes man{
+	0%{
+		background-position: 40% 60%;
+	}
+	50%{
+		background-position: 60% 40%
+	}
+	100%{
+		background-position: 40% 60%
+	}
+}*/
 
 .section-srv{
 	width: 90%;
@@ -226,6 +241,7 @@ det-log{
 
 .tecno{
 	padding-top: 130px;
+
 }
 
 .tecno-img{
@@ -373,7 +389,6 @@ input[type="submit"]:hover{
 	
 }
 .foot__soc__{
-    width: 78%;
     height: 35px;
     font-size: large;
     font-family: 'Cinzel';
