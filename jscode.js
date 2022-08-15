@@ -19,5 +19,5 @@ function prender(pre){
 		pr = 0
 		form.removeAttribute("hidden")
 		bomb.removeAttribute("hidden")
-	}
+	}	
 

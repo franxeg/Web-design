@@ -117,6 +117,7 @@ h1{
 	text-align: center;
 	display: flex;
 	margin-left: 120px;
+
 }
 
 .black-container{
@@ -273,6 +274,12 @@ p, h3{
 .perilla-sep{
 	margin-top: 100px;
 }
+.enviado{
+	margin-top: 100px;
+}
+.img-enviado{
+margin-left: 545px;
+}
 
 .sep{
 	height: 20px;
@@ -304,6 +311,7 @@ input, textarea{
     color: #00ff14;
     max-width: 90%;
     max-height: 46px;
+    text-align: center;
 }
 
 input[type="submit"]:hover{
@@ -330,6 +338,9 @@ input[type="submit"]:hover{
 
 .perilla-container{
 	
+}
+.enviado{
+	align-content: center;
 }
 
 .perilla{
@@ -437,7 +448,36 @@ input[type="submit"]:hover{
 }
 
 .input-form__mail__{
-	height: 90px;
+	width: 90%;
+    background: #097e1d6b;
+    border-bottom: solid;
+    border-top: none;
+    color: #00ff14;
+    max-width: 90%;
+    max-height: 46px;
+    margin: 10px;
+    border-left: solid;
+}
+
+.input-form__mail__ [type="submit"]{
+	width: 100%;
+    background: #097e1d6b;
+    border-bottom: solid;
+    border-top: none;
+    color: #00ff14;
+    max-width: 90%;
+    max-height: 46px;
+    margin: 10px;
+    border-left: solid;
+}
+
+.coment{
+	min-height: 170px;
+}
+
+.boton{
+	width: 40px;
+	height: 40px;
 }
 
 
