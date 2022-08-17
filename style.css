@@ -37,6 +37,7 @@ i{
 	width: auto;
 	display: block;
 	background-color: green;
+	margin-top: 10px;
 }
 
 
@@ -44,7 +45,8 @@ i{
 .list-li:hover{
 	background: linear-gradient(45deg, green, black);
 	border-bottom: solid;
-	border-color: #000;
+	border-color: green;
+	
 }
 
 .soc-li{
@@ -59,6 +61,7 @@ i{
 	list-style: none;
 	text-align: left;
 	padding: 8px;
+	position: relative;
 }
 
 .list-li{
@@ -115,6 +118,7 @@ h1{
 	text-align: center;
 	display: flex;
 	margin-left: 120px;
+
 }
 
 .black-container{
@@ -287,6 +291,12 @@ p, h3{
 .perilla-sep{
 	margin-top: 100px;
 }
+.enviado{
+	margin-top: 100px;
+}
+.img-enviado{
+margin-left: 545px;
+}
 
 .sep{
 	height: 20px;
@@ -318,6 +328,7 @@ input, textarea{
     color: #00ff14;
     max-width: 90%;
     max-height: 46px;
+    text-align: center;
 }
 
 input[type="submit"]:hover{
@@ -344,6 +355,9 @@ input[type="submit"]:hover{
 
 .perilla-container{
 	
+}
+.enviado{
+	align-content: center;
 }
 
 .perilla{
@@ -390,6 +404,10 @@ input[type="submit"]:hover{
 	
 }
 .foot__soc__{
+<<<<<<< HEAD
+=======
+    width: auto;
+>>>>>>> main
     height: 35px;
     font-size: large;
     font-family: 'Cinzel';
@@ -433,6 +451,61 @@ input[type="submit"]:hover{
 	}
 
 }
+
+.form__mail__{
+
+	flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    border-style: solid;
+    border-color: green;
+    background: black;
+    padding: 64px;
+}
+
+.sobre{
+	max-width: 263px;
+}
+
+.input-form__mail__{
+	width: 90%;
+    background: #097e1d6b;
+    border-bottom: solid;
+    border-top: none;
+    color: #00ff14;
+    max-width: 90%;
+    max-height: 46px;
+    margin: 10px;
+    border-left: solid;
+}
+
+.input-form__mail__ [type="submit"]{
+	width: 100%;
+    background: #097e1d6b;
+    border-bottom: solid;
+    border-top: none;
+    color: #00ff14;
+    max-width: 90%;
+    max-height: 46px;
+    margin: 10px;
+    border-left: solid;
+}
+
+.coment{
+	min-height: 170px;
+}
+
+
+.boton{
+	width: 100%;
+    background: #097e1d6b;
+    color: #00ff14;
+    max-width: 90%;
+    max-height: 46px;
+    margin: 10px;
+    border-style: solid;
+}
+
 
 @media screen and (max-width: 800px){
 	.nav-btn{

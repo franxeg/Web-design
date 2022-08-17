@@ -44,6 +44,11 @@
 						<a>Contacto</a>
 						<ul class="list">
 							<li class="list-li">
+								<a href="mail.html" target="_blank">
+									<i class="fa-solid fa-envelope soc-li"></i>e-Mail
+								</a>
+							</li>
+							<li class="list-li">
 								<a href="https://wa.me/+5492355644768" target="_blank">
 									<i class="fa-brands fa-whatsapp soc-li"></i>Whatsapp
 								</a>
@@ -64,6 +69,11 @@
 			</nav>
 		</div>
 		<div class="header-container__soc__">
+			<div class="social">
+				<a href="mail.html" target="_blank">
+					<i class="fa-solid fa-envelope soc"></i>
+				</a>
+			</div>	
 			<div class="social">
 				<a href="https://www.instagram.com/francoegrx21/" target="_blank">
 					<i class="fa-brands fa-instagram soc"></i>
@@ -127,43 +137,56 @@
 				</div>
 		</section>
 		<div class="hidden">
-			<div class="perilla-sep">
+			<div class="enviado" hidden=" ">
 				<div class="serv">
-					<h4 class="serv">Perilla</h4>
+					<h4 class="serv">Enviado</h4>
+				</div>
+				<div >
+					<img src="enviado.gif" class="img-enviado">
 				</div>
 			</div>
-			<div class="sep">
-					
-			</div>
-			<div class="form-container">
-				
-				<div class="perilla-container">
-					<img class="perilla" src="off.jpg">
-					
-				</div>
-				<div id= "bombilla" >
-					<img src="bombilla.jpg" class= "bombilla" hidden= " ">
-				</div>
-				
+			<div class="perilla-sep">
 				<div>
-					<form action="https://formsubmit.co/francoegr21@gmail.com" method="POST" class="form" hidden=" ">
-						<h3><b>Ayudanos a mejorar!!</b></h3>
-						<p>Dejanos tu comentario</p>
-						<div class="input-form">
-							<input type="text" name="nombre" placeholder="Nombre">
-						</div>
-						<div class="input-form">
-							<input type="email" name="email" placeholder="Email" >
-						</div>	
-						<div class="input-form">	
-							<textarea type="text-area" name="coment" placeholder="Comentario" class="coment"></textarea>
-						</div>
-						<div class="input-form">	
-							<input type="submit">
-						</div>
-					</form>
+					<div class="serv">
+						<h4 class="serv">Perilla</h4>
+					</div>
 				</div>
-			</div>
+				<div class="sep">
+						
+				</div>
+				
+				<div class="form-container">
+					
+					<div class="perilla-container">
+						<img class="perilla" src="off.jpg">
+						
+					</div>
+					<div id= "bombilla" >
+						<img src="bombilla.jpg" class= "bombilla" hidden= " ">
+					</div>
+					
+					<div>
+						<form id="form" class="form" hidden=" ">
+							<h3><b>Ayudanos a mejorar!!</b></h3>
+							<p>Dejanos tu comentario</p>
+							<div class="input-form">
+								<input type="text" name="nombre" placeholder="Nombre" class="nom" required>
+							</div>
+							<div class="input-form">
+								<input type="email" name="email" placeholder="Email" class="mai" required>
+							</div>	
+							<div class="input-form">	
+								<textarea type="text-area" name="coment" placeholder="Comentario" class="tex" required></textarea>
+							</div>
+							<div class="input-form">	
+								<input type="submit" class="envio">
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>	
+			<script src="envio.js"></script>
 		</div>
 		<section  class="section-container__sns__">
 			
@@ -190,7 +213,7 @@
 	<footer>
 		<div class="foot">
 			<div class="foot__soc__">
-				<a href="https://franxeg.github.io/Web-design/" target="_blank">Web</a>
+				<a href="mail.html" target="_blank">Mail</a>
 			</div>
 			<div class="foot__soc__">
 				<a href="https://www.instagram.com/francoegrx21/" target="_blank">Instagram</a>
