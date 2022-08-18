@@ -116,7 +116,7 @@ h1{
 .header-container__log__{
 	text-align: center;
 	display: flex;
-	margin-left: 120px;
+	margin-left: 66px;
 
 }
 
@@ -170,8 +170,11 @@ h4.serv{
 
 .log{
 	font-size: 80px;
-	padding-top: 20px;
-	text-shadow: 2px 2px 1px;
+    padding-top: 20px;
+    text-shadow: 2px 2px 1px;
+    color: #1f760f;
+    margin-right: -61px;
+    margin-bottom: 22px;
 }
 
 det-log{
@@ -327,18 +330,14 @@ input[type="submit"]:hover{
 
 .sns-p{
 	font-size: x-large;
-	background-image: url("hum.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	margin: auto;
-	padding-left: 40px;
-	padding-right: 40px;
-	border-radius: 50px;
+    background-image: url(hum.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 5px;
 }
 
-.perilla-container{
-	
-}
+
 .enviado{
 	align-content: center;
 }
@@ -360,9 +359,11 @@ input[type="submit"]:hover{
 	padding-left: 50px;
 }
 
+.section__sns__{
+	width: 1080px;
+}
 
 .sns-img{
-	display: flex;
 	justify-content: center;
 	text-align: center;
 }
