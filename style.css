@@ -2,7 +2,7 @@
 	font-family: 'cinzel';
 	
 }
-.body{
+body{
 	background: green;
 }
 
@@ -503,8 +503,34 @@ input[type="submit"]:hover{
 	.header-container__tit__{
 		max-width: 500px;
 	}
-		.header-container__nav__{
+	body{
+		background: #000;
+	}
+	.header-container__nav__{
 		max-width: 500px;
 	
+	}
+	.sns-p{
+		width: 300px;
+	}
+	.serv{
+	    max-width: 300px;
+    	padding-top: 50px;
+	}
+	.tecno-img{
+		max-width: 300px;
+	}
+	.subt{
+		padding: 0;
+		padding-bottom: 62px;
+	}
+	.foot__soc__{
+		font-size: small;
+	}
+	.section-container{
+		padding-top: 52px;
+	}
+	.section-srv{
+		margin-top: 23px;
 	}
 }
