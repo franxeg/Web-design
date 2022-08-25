@@ -10,9 +10,16 @@ const perisep = document.querySelector(".perilla-sep")
 var pr = 1
 
 
-formu.addEventListener("submit", function(e){
+formu.addEventListener("submit", async function(e){
 	e.preventDefault();
-	
+	const for = new FormData(this)
+	const response = await fetch(this.action, {
+		method: this.method,
+		body: formu,
+		headers: {
+			'Accept': 'application/json'
+		}
+	})
 }
 )
 
