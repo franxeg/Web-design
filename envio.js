@@ -12,7 +12,7 @@ var pr = 1
 
 formu.addEventListener("submit", async function(e){
 	e.preventDefault();
-	const for = new FormData(this)
+	const form = new FormData(this);
 	const response = await fetch(this.action, {
 		method: this.method,
 		body: formu,
