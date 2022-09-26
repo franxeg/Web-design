@@ -217,6 +217,12 @@ det-log{
 	grid-template-columns: repeat(3, 1fr);
 
 }
+.apps{
+	width: 100%;
+    text-align: center;
+    font-family: 'Cinzel';
+    margin-top: 90px;
+}
 
 .section-srv{
 	width: 90%;
@@ -325,7 +331,7 @@ input[type="submit"]:hover{
 .sns-p{
 	font-size: x-large;
     background-image: url(hum.jpg);
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
     margin: auto;
     padding: 5px;
@@ -432,6 +438,9 @@ input[type="submit"]:hover{
 	}
 	.sns-p{
 		font-size: smaller;
+	}
+	.logo{
+		position:relative;
 	}
 
 }
