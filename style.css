@@ -68,13 +68,7 @@ i{
 	color: #fff;
 }
 
-.social-w{
 
-}
-
-.social{
-	
-}
 .soc{
 	color: green;
 	font-size: 30px;
@@ -337,6 +331,10 @@ input[type="submit"]:hover{
     padding: 5px;
 }
 
+.logo{
+	width: 179px;
+    position: fixed;
+}
 
 .enviado{
 	align-content: center;
@@ -369,12 +367,12 @@ input[type="submit"]:hover{
 }
 
 .el-fran{
-	width: 150px;
+	width: 200px;
 	border-radius: 60px;
 	border-style: solid;
 	border-color: #fff;
 	height: 210px;
-	animation: 5s fran infinite linear;
+	animation: 8s fran infinite linear;
 }
 
 @keyframes fran {
@@ -428,9 +426,7 @@ input[type="submit"]:hover{
 	.sns-img{
 		display: block;
 	}
-	.header-container__nav__{
-		
-	}
+
 	.main{
 		height: auto;
 	}
