@@ -26,7 +26,10 @@
         <h1><b>Portafolio</b></h1>
       </nav>
     </div>
-    <div class="header-container__actions__">
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="header-container__actions__" id="navMenu">
       <div class="header-container__nav__">
         <div class="nav-btn"><i class="fa-solid fa-home"></i><a href="index.html">Home</a></div>
         <div class="nav-btn"><i class="fa-solid fa-lightbulb"></i><a href="#projects">Proyectos</a></div>
@@ -60,8 +63,30 @@
         <p>Página web propia (proyecto actual), mostrando mis habilidades en diseño y desarrollo web moderno.</p>
         <a href="https://github.com/franxeg/Web-design" target="_blank">Ver repositorio <i class="fa-brands fa-github"></i></a>
       </article>
+      <article class="portafolio-card">
+        <h3>Game Hub</h3>
+        <p>Colección de 8 juegos retro clásicos (2048, Snake, Memotest, Pong, Tres en línea, Simón Dice, Ahorcado, Puzzle) desarrollados en HTML/JS/CSS y empaquetados como app Android con Capacitor.</p>
+        <a href="https://github.com/franxeg/game-hub" target="_blank">Ver repositorio <i class="fa-brands fa-github"></i></a>
+      </article>
+      <article class="portafolio-card">
+        <h3>Copa Carnaval</h3>
+        <p>Aplicación multiplataforma desarrollada en Flutter, compilada para Android, iOS, web y escritorio. Ideal para gestionar torneos o eventos deportivos.</p>
+        <a href="https://github.com/franxeg/copa-carnaval" target="_blank">Ver repositorio <i class="fa-brands fa-github"></i></a>
+      </article>
     </div>
   </section>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navMenu').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('active');
+        document.getElementById('hamburger').classList.remove('active');
+      });
+    });
+  </script>
   <footer>
     <div class="foot">
       <div class="foot__soc__"><a href="tel:+5492355554004">Tel: 2355-554004</a></div>

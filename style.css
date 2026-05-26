@@ -481,53 +481,108 @@ textarea {
   display: none !important;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px;
+  gap: 5px;
+  z-index: 20;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--text);
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
 @media (max-width: 960px) {
   .header-container {
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1.2rem;
+    flex-wrap: wrap;
+    padding: 0.8rem 1rem;
   }
 
-  .header-container__tit__ {
+  .hamburger {
+    display: flex;
+  }
+
+  .header-container__actions__ {
+    display: none;
     width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem 0 0.5rem;
+    border-top: 1px solid var(--border);
+    margin-top: 0.5rem;
+  }
+
+  .header-container__actions__.active {
+    display: flex;
   }
 
   .header-container__nav__ {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .header-container__soc__ {
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-btn {
+    width: 100%;
     justify-content: center;
   }
 }
 
 @media (max-width: 700px) {
-  .header-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
   .header-container__tit__ h1 {
     font-size: 1.15rem;
   }
 
-  .header-container__nav__ {
-    gap: 0.6rem;
+  .main {
+    padding: 4rem 1rem 2rem;
   }
 
-  .main {
-    padding-top: 5rem;
+  .subt {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 520px) {
+/* Mobile grids: single column on small screens */
+@media (max-width: 640px) {
+  .section-container__srv__,
+  .section-container__srb__,
+  .section__sns__,
+  .portafolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
   .section-container,
   .section-container__sns__,
   .form__mail__,
   footer {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .nav-btn,
-  .list-a {
-    width: 100%;
-    justify-content: center;
   }
 }

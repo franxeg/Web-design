@@ -14,10 +14,12 @@ function prender(pre){
 		pr = 1
 		return
 	}
-	else if(pre == 1)
+	else if(pre == 1){
 		peri.src = "on.jpg"
 		pr = 0
 		form.removeAttribute("hidden")
 		bomb.removeAttribute("hidden")
-	}	
+	}
+}
+
 

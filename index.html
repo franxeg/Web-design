@@ -26,7 +26,10 @@
 				<h1 class="welcome-title"><b>Bienvenidos, a nuestro espacio</b></h1>
 			</nav>
 		</div>
-		<div class="header-container__actions__">
+		<button class="hamburger" id="hamburger" aria-label="Menú">
+			<span></span><span></span><span></span>
+		</button>
+		<div class="header-container__actions__" id="navMenu">
 			<div class="header-container__nav__">
 				<div class="nav-btn">
 					<i class="fa-solid fa-home"></i>
@@ -184,7 +187,7 @@
 			</div>	
 			<script src="envio.js"></script>
 		</div>
-		<section class="section-container__sns__">
+		<section id="snos" class="section-container__sns__">
 			<div class="section__sns__">
 				<div class="sns-card">
 					<h4 class="serv">Nuestros datos</h4>
@@ -224,5 +227,17 @@
 		<p class="footer-note">© 2026 Jupiter Studio. Diseño web profesional, presencia digital y soluciones modernas.</p>
 	</footer>
 	<script src="jscode.js"></script>
+	<script>
+		document.getElementById('hamburger').addEventListener('click', function() {
+			document.getElementById('navMenu').classList.toggle('active');
+			this.classList.toggle('active');
+		});
+		document.querySelectorAll('#navMenu a').forEach(link => {
+			link.addEventListener('click', () => {
+				document.getElementById('navMenu').classList.remove('active');
+				document.getElementById('hamburger').classList.remove('active');
+			});
+		});
+	</script>
 </body>
 </html>
