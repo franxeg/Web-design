@@ -574,7 +574,8 @@ textarea {
   .section-container__srv__,
   .section-container__srb__,
   .section__sns__,
-  .portafolio-grid {
+  .portafolio-grid,
+  .doc-grid {
     grid-template-columns: 1fr !important;
   }
 
@@ -649,4 +650,62 @@ textarea {
 .section-srv h3 {
   color: var(--text);
   font-size: 1.2rem;
+}
+
+/* Documentación: grilla de pasos y preguntas frecuentes */
+.doc-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.doc-grid .section-srv {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.doc-grid details.section-srv {
+  cursor: pointer;
+}
+
+.doc-grid summary {
+  width: 100%;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.05rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.doc-grid summary::-webkit-details-marker {
+  display: none;
+}
+
+.doc-grid summary::after {
+  content: '+';
+  flex: 0 0 auto;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(108, 160, 255, 0.16);
+  color: var(--accent);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.doc-grid details[open] summary::after {
+  content: '\2212';
+}
+
+.doc-grid details p {
+  color: var(--muted);
+  line-height: 1.75;
+  margin-top: 0.9rem;
 }

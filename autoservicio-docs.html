@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Documentación de Autoservicio | Jupiter Studio</title>
+  <meta name="description" content="Manual de instalación, primeros pasos, licencias, activación Premium, backups y solución de problemas de Autoservicio 1.0.1.">
+  <meta name="keywords" content="autoservicio, manual, instalacion, documentacion, licencia, premium, backup, Jupiter Studio">
+  <meta name="author" content="franco gonzalez">
+  <meta name="robots" content="index">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="Jupiter.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b988c0319.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+  <header class="header-container">
+    <div class="header-container__log__">
+      <img src="Jupiter.png" alt="logo Jupiter" class="logo">
+    </div>
+    <div class="header-container__tit__">
+      <nav>
+        <h1><b>Documentación · Autoservicio</b></h1>
+      </nav>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="header-container__actions__" id="navMenu">
+      <div class="header-container__nav__">
+        <div class="nav-btn"><i class="fa-solid fa-home"></i><a href="index.html">Home</a></div>
+        <div class="nav-btn"><i class="fa-solid fa-box-open"></i><a href="autoservicio.html">Autoservicio</a></div>
+        <div class="nav-btn"><i class="fa-solid fa-download"></i><a href="autoservicio.html#descarga">Descarga</a></div>
+        <div class="nav-btn"><i class="fa-solid fa-briefcase"></i><a href="portafolio.html">Portafolio</a></div>
+      </div>
+      <div class="header-container__soc__">
+        <a href="https://github.com/franxeg" target="_blank"><i class="fa-brands fa-github soc"></i></a>
+        <a href="https://www.instagram.com/jupiterinformatica/" target="_blank"><i class="fa-brands fa-instagram soc"></i></a>
+        <a href="https://wa.me/5492355554004" target="_blank"><i class="fa-brands fa-whatsapp soc"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <p class="subt">Guía rápida para instalar, registrar y usar Autoservicio 1.0.1. Si algo no aparece como se describe, escribinos por WhatsApp y te ayudamos.</p>
+    <p class="rayo"><b>Manual de uso</b></p>
+    <div class="autoservicio-cta">
+      <a class="boton" href="#instalacion">Instalación</a>
+      <a class="boton boton--ghost" href="autoservicio.html#descarga">Descargar instalador</a>
+    </div>
+  </main>
+
+  <section id="instalacion" class="section-container">
+    <div class="serv"><h4 class="serv">1. Instalación</h4></div>
+    <div class="doc-grid">
+      <div class="section-srv">
+        <i class="fa-solid fa-circle-check srv"></i>
+        <h3>Requisitos</h3>
+        <p>Windows 10 o 11, 4 GB de RAM y aproximadamente 200 MB libres. No necesitás Docker ni instalar PostgreSQL: el instalador ya incluye todo.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-download srv"></i>
+        <h3>Paso 1 · Descargar</h3>
+        <p>Bajá <b>Autoservicio-1.0.1-Setup.exe</b> desde el release público de GitHub y ejecutalo.</p>
+        <a class="autoservicio-link" href="https://github.com/franxeg/Autoservicio/releases/latest/download/Autoservicio-1.0.1-Setup.exe" target="_blank">Descargar <i class="fa-solid fa-download"></i></a>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-shield-virus srv"></i>
+        <h3>Paso 2 · SmartScreen</h3>
+        <p>El instalador no está firmado digitalmente. Si Windows muestra una advertencia, elegí <b>Más información</b> y después <b>Ejecutar de todos modos</b>.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-gears srv"></i>
+        <h3>Paso 3 · Instalar</h3>
+        <p>Seguí el asistente con las opciones por defecto. La primera vez tarda 1 o 2 minutos porque prepara la base de datos. Al terminar se abre el navegador en <b>http://localhost:3000</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="primer-registro" class="section-container">
+    <div class="serv"><h4 class="serv">2. Primer registro</h4></div>
+    <div class="doc-grid">
+      <div class="section-srv">
+        <i class="fa-solid fa-user-plus srv"></i>
+        <h3>Crear la cuenta</h3>
+        <p>Entrá a <b>http://localhost:3000/registro</b> (necesitás conexión a internet) y completá nombre del negocio, usuario y contraseña. La cuenta arranca con <b>30 días de prueba</b>.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-user-shield srv"></i>
+        <h3>Usuario administrador</h3>
+        <p>Después del registro, el sistema te pide completar la configuración inicial con tu usuario administrador definitivo. Ese usuario es el que usarán los empleados con rol ADMIN.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-right-to-bracket srv"></i>
+        <h3>Ingresar después</h3>
+        <p>En próximos arranques abrí <b>http://localhost:3000/login</b> e iniciá sesión con tu usuario y contraseña. Si el sistema ya está registrado, la opción de registro no vuelve a aparecer.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-plug srv"></i>
+        <h3>¿Por qué pide internet?</h3>
+        <p>Solo para registrar la empresa y consultar el estado de la licencia. El uso diario (ventas, stock, empleados) funciona sin conexión; hay un margen de gracia de 7 días.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="licencias" class="section-container">
+    <div class="serv"><h4 class="serv">3. Licencias Free y Premium</h4></div>
+    <div class="doc-grid">
+      <div class="section-srv">
+        <i class="fa-solid fa-circle-check srv"></i>
+        <h3>Free</h3>
+        <p>Incluye la gestión esencial: dashboard, registro de ventas y movimientos, y carga de empleados. Durante el trial se accede a todas las funciones.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-crown srv"></i>
+        <h3>Premium</h3>
+        <p>Habilita el nombre de tu empresa en el menú y en los comprobantes, el teléfono y la dirección en el menú, y las funciones avanzadas. Elegí 30 días, 1 año o sin vencimiento.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-credit-card srv"></i>
+        <h3>Activación</h3>
+        <p>Después de acreditado el pago por MercadoPago o transferencia, el proveedor activa Premium desde su consola. Para ver el cambio, abrí <b>Configuración → Premium</b> en la aplicación.</p>
+        <a class="autoservicio-link" href="autoservicio.html#pagos">Ver medios de pago <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-clock srv"></i>
+        <h3>Trial y vencimiento</h3>
+        <p>El estado se calcula en el servidor de licencias. Si el equipo estuvo sin conexión, abrí la pestaña Premium para sincronizar la fecha real de vencimiento.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="uso-diario" class="section-container">
+    <div class="serv"><h4 class="serv">4. Uso diario</h4></div>
+    <div class="doc-grid">
+      <div class="section-srv">
+        <i class="fa-solid fa-cash-register srv"></i>
+        <h3>Ventas (POS)</h3>
+        <p>Cargá productos, aplicá cantidades y cerrá la venta. Los lectores de código de barras USB funcionan como un teclado: escanean y presionan Enter.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-boxes-stacked srv"></i>
+        <h3>Productos y stock</h3>
+        <p>Alta de productos, categorías, elaborados, combos y recetas. Los movimientos de stock quedan registrados con fecha y usuario.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-truck srv"></i>
+        <h3>Compras y proveedores</h3>
+        <p>Registrá compras, cargá el proveedor y controlá las cuentas. Los saldos se pueden saldar desde el listado de proveedores.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-users srv"></i>
+        <h3>Empleados y roles</h3>
+        <p>Creá usuarios con rol ADMIN o CAJERO. Los roles restringen el acceso a pantallas como Dashboard, Movimientos y Empleados.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mantenimiento" class="section-container">
+    <div class="serv"><h4 class="serv">5. Mantenimiento y soporte</h4></div>
+    <div class="doc-grid">
+      <div class="section-srv">
+        <i class="fa-solid fa-floppy-disk srv"></i>
+        <h3>Backups</h3>
+        <p>Ejecutá <b>backup.bat</b> para generar una copia manual en la carpeta <b>backups\</b>. Se conservan los últimos 14 días y también hay backup automático diario si activaste el autoarranque.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-key srv"></i>
+        <h3>Olvidé mi contraseña</h3>
+        <p>Escribinos por WhatsApp. El proveedor genera un código de recuperación de 4 dígitos, válido por 30 minutos, que se usa en la pantalla de login.</p>
+        <a class="autoservicio-link" href="https://wa.me/5492355554004" target="_blank">Pedir código <i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-rotate srv"></i>
+        <h3>Registrar otra empresa</h3>
+        <p>Desde la configuración podés reiniciar el sistema. Se genera un respaldo automático primero y luego se borran los datos locales para crear otra cuenta.</p>
+      </div>
+      <div class="section-srv">
+        <i class="fa-solid fa-screwdriver-wrench srv"></i>
+        <h3>Detener o iniciar</h3>
+        <p><b>iniciar.bat</b> levanta el sistema en segundo plano y <b>detener.bat</b> lo apaga. Si el puerto 3000 está ocupado, cambiá <b>APP_PORT</b> en <b>config.env</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="preguntas" class="section-container">
+    <div class="serv"><h4 class="serv">Preguntas frecuentes</h4></div>
+    <div class="doc-grid">
+      <details class="section-srv">
+        <summary>¿El sistema funciona sin internet?</summary>
+        <p>Sí para el uso diario. Necesitás conexión al registrar la empresa y para verificar la licencia; hay un margen de gracia de 7 días sin conexión.</p>
+      </details>
+      <details class="section-srv">
+        <summary>¿Puedo usar más de una computadora?</summary>
+        <p>Cada instalación es independiente. Para múltiples puestos, consultanos por WhatsApp y te indicamos la mejor opción según tu caso.</p>
+      </details>
+      <details class="section-srv">
+        <summary>¿Dónde veo los días de prueba restantes?</summary>
+        <p>En <b>Configuración → Premium</b>. Esa pestaña sincroniza con el servidor al abrirse.</p>
+      </details>
+      <details class="section-srv">
+        <summary>¿Cómo sé si Premium ya está activo?</summary>
+        <p>En <b>Configuración → Premium</b> aparece el estado y la fecha de vencimiento. Si no se actualiza, verificá la conexión y volvé a abrir la pestaña.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section-container">
+    <div class="section-srv">
+      <i class="fa-brands fa-whatsapp srv"></i>
+      <h3>¿Necesitás ayuda?</h3>
+      <p>Escribinos por WhatsApp para consultas de instalación, licencias, activación o recuperación de contraseña.</p>
+      <a class="autoservicio-link" href="https://wa.me/5492355554004" target="_blank">Hablar con Jupiter Studio <i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <div class="foot__soc__"><a href="tel:+5492355554004">Tel: 2355-554004</a></div>
+      <div class="foot__soc__"><a href="https://github.com/franxeg" target="_blank">GitHub</a></div>
+      <div class="foot__soc__"><a href="https://www.linkedin.com/in/franco-gonzalez-1a2b97232/" target="_blank">Linkedin</a></div>
+      <div class="foot__soc__"><a href="https://www.instagram.com/jupiterinformatica/" target="_blank">Instagram</a></div>
+      <div class="foot__soc__"><a href="https://wa.me/5492355554004" target="_blank">Whatsapp</a></div>
+    </div>
+    <p class="footer-note">© 2026 Jupiter Studio. Soluciones digitales y software para tu negocio.</p>
+  </footer>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navMenu').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('active');
+        document.getElementById('hamburger').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
