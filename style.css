@@ -634,19 +634,6 @@ textarea {
   transform: translateY(-1px);
 }
 
-.autoservicio-datos {
-  margin-top: 0.75rem;
-  padding: 1rem;
-  border-radius: 14px;
-  background: rgba(0, 0, 0, 0.18);
-  line-height: 1.9;
-  word-break: break-all;
-}
-
-.autoservicio-datos b {
-  color: var(--text);
-}
-
 .section-srv h3 {
   color: var(--text);
   font-size: 1.2rem;
