@@ -575,7 +575,8 @@ textarea {
   .section-container__srb__,
   .section__sns__,
   .portafolio-grid,
-  .doc-grid {
+  .doc-grid,
+  .plan-grid {
     grid-template-columns: 1fr !important;
   }
 
@@ -696,3 +697,36 @@ textarea {
   line-height: 1.75;
   margin-top: 0.9rem;
 }
+
+/* Planes Premium */
+.planes-titulo {
+  margin-top: 2.5rem;
+  font-size: 1.5rem !important;
+}
+
+.plan-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.plan-card {
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: flex-start;
+}
+
+.plan-precio {
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.plan-precio span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
